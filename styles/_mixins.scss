@@ -1,0 +1,17 @@
+//MIXINS
+@mixin xs {
+    @media screen and (max-width: map-get($breakpoints,"xs")) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (max-width: map-get($breakpoints,"md")) {
+      @content;
+    }
+  }
+  
+  $breakpoints: (
+    "xs": 768px,
+    "md": 1200px,
+  );
